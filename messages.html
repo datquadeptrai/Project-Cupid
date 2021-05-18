@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/Tinder-clone/css/normalize.css" />
+
+    <link
+      href="/Tinder-clone/css/uicons-regular-rounded/css/uicons-regular-rounded.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="nav navbar-nav">
+        <li class="logo">
+          <a href="index.html" class="nav-link">
+            <img src="./img/tinder.svg" alt="" / id="navbar-logo"></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"
+            ><i class="fi-sr-following nav-icon"></i>
+            <span class="link-text">Matching</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="messages.html" class="nav-link"
+            ><i class="fi-sr-comment-alt nav-icon"></i
+            ><span class="link-text">Messages</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="wall.html" class="nav-link"
+            ><span class="fi-sr-user nav-icon"></span
+            ><span class="link-text">Profile</span></a
+          >
+        </li>
+        <li class="nav-item last-nav" onclick="signOut()">
+          <a href="" class="nav-link"
+            ><i class="fi-sr-power nav-icon"></i
+            ><span class="link-text">Log Out</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="people">
+      <div class="top-bar">
+        <div class="top-bar-inner">
+          <span>Messages</span>
+          <img
+            src="https://i.pinimg.com/originals/89/59/2b/89592b3392fee110134235e95d80dbf7.jpg"
+            alt=""
+            id="profilePhoto"
+          />
+        </div>
+        <input placeholder="Search for people" />
+      </div>
+      <div class="chat-people">
+        <div class="chat-item" id="world" onclick="worldChat()">
+          <div class="chat-container world-chat">
+            <span class="chat-name"> Thế Giới</span>
+            <i class="fi-sr-angle-right world-arrow"></i> <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content chat-main">
+      <div class="chat-topbar">
+        <img
+          src="https://i.pinimg.com/originals/89/59/2b/89592b3392fee110134235e95d80dbf7.jpg"
+          alt=""
+        />
+        <div>
+          <span class="chat-topbar-name"> Đỗ Thành Đạt</span>
+          <br />
+        </div>
+        <i class="fi-sr-info"></i>
+      </div>
+      <div class="chat-content">
+        <div class="chat-item"></div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Nhập tin nhắn 💙" / id="chatbox">
+        <i class="fi-sr-paper-plane btnsend"></i>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css"
+  />
+
+  <script src="/Tinder-clone/js/app.js"></script>
+</html>
