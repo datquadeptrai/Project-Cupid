@@ -1,6 +1,7 @@
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBz6opn4PobCX_Zoh9-Dr7lS19kxy02KR8",
-  authDomain: "tinder-clone-4d9c9.firebaseapp.com",
+  authDomain: "https://datquadeptrai.github.io/Project-Cupid",
+  databaseURL: "https://tinder-clone-4d9c9-default-rtdb.firebaseio.com",
   projectId: "tinder-clone-4d9c9",
   storageBucket: "tinder-clone-4d9c9.appspot.com",
   messagingSenderId: "817387680536",
