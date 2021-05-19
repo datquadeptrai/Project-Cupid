@@ -39,6 +39,8 @@ function signInWithGoogle() {
               UID: auth.currentUser.uid,
               photoUrl: auth.currentUser.photoURL,
               bioUpdated: false,
+              matchedPeople: [],
+              rejectedPeople: [],
             };
             userRef
               .doc(auth.currentUser.uid)

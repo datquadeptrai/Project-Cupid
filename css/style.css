@@ -71,10 +71,15 @@ body {
 }
 .nav-item {
   color: white;
-  margin-top: 7vh;
+  padding-top: 3vh;
+  margin-top: 2vh;
+  padding-bottom: 3vh;
   display: flex;
-  margin-left: 19px;
+  padding-left: 19px;
   align-items: center;
+}
+.nav-item:hover {
+  background-color: #ee6c66;
 }
 .nav-item a {
   display: flex;
@@ -83,8 +88,8 @@ body {
   color: inherit;
 }
 .last-nav {
-  position: absolute;
   bottom: 15px;
+  margin-top: 45vh;
 }
 .nav-link {
   text-decoration: none;
@@ -418,8 +423,9 @@ body {
   width: 65%;
   margin-left: 5px;
   box-shadow: 0 1px 5px 0 hsl(0deg 0% 53% / 77%);
-  display: flex;
+
   align-items: center;
+  display: none;
 }
 .chat-input input {
   border: 0;
